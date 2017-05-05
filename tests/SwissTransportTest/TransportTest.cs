@@ -13,6 +13,8 @@ namespace SwissTransport
             testee = new Transport();
             var stations = testee.GetStations("Sursee,");
 
+            var s = testee.GetStations("Luzern, Brüelstrasse");
+
             Assert.AreEqual(50, stations.StationList.Count);
         }
 
